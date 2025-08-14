@@ -1,6 +1,0 @@
-{
-  "buildCommand": "cd kodunicorn-web && npm install && npm run build",
-  "outputDirectory": "kodunicorn-web/dist",
-  "installCommand": "cd kodunicorn-web && npm install",
-  "framework": "vite"
-}
