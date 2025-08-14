@@ -227,7 +227,7 @@ const FeatureCard = styled(motion(Link))`
     transform: scaleX(0);
     transition: transform 0.3s ease;
   }
-  
+
   &:hover {
     transform: translateY(-8px);
     box-shadow: ${theme.shadows.large};
@@ -481,7 +481,7 @@ export const Home: React.FC = () => {
           <AboutDescription>
             KodUnicorn, teknoloji ve eğitimi herkes için erişilebilir kılmayı amaçlayan 
             eğlenceli bir platformdur! 🦄 Bilgisayar bilimleri öğrencisi olarak, kendi deneyimlerimi 
-            paylaşarak diğer öğrencilere ilham vermek ve onlara rehberlik etmek istiyorum. 
+            paylaşarak diğer öğrencilere ilham vermek ve onlara rehberlik etmek istiyorum.
             Birlikte öğrenelim, birlikte büyüyelim! 💖
           </AboutDescription>
         </AboutContent>
