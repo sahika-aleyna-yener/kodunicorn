@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Arka plan gradyanı -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFE6F2;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#F0E6FF;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Ana daire arka plan -->
+  <circle cx="256" cy="256" r="200" fill="url(#bgGradient)" stroke="#6B4EE6" stroke-width="8"/>
+  
+  <!-- Unicorn başı -->
+  <ellipse cx="256" cy="280" rx="80" ry="60" fill="white" stroke="#6B4EE6" stroke-width="6"/>
+  
+  <!-- Boynuz -->
+  <path d="M 240 220 L 256 160 L 272 220" 
+    stroke="#6B4EE6" 
+    stroke-width="8" 
+    fill="#FFD700"/>
+  <path d="M 248 200 L 256 180 L 264 200" 
+    stroke="#6B4EE6" 
+    stroke-width="4" 
+    fill="none"/>
+  
+  <!-- Saç -->
+  <path d="M 200 200 Q 220 180, 240 200 T 280 200 T 320 200" 
+    stroke="#6B4EE6" 
+    stroke-width="6" 
+    fill="none"/>
+  
+  <!-- Yele - Pembe şeritler -->
+  <path d="M 180 220 C 200 200, 220 240, 240 220 S 280 240, 300 220 S 340 240, 360 220" 
+    fill="#FF9ECD" 
+    stroke="#6B4EE6" 
+    stroke-width="2"/>
+  <path d="M 180 240 C 200 220, 220 260, 240 240 S 280 260, 300 240 S 340 260, 360 240" 
+    fill="#FF9ECD" 
+    stroke="#6B4EE6" 
+    stroke-width="2"/>
+  
+  <!-- Yele - Mavi şeritler -->
+  <path d="M 180 260 C 200 240, 220 280, 240 260 S 280 280, 300 260 S 340 280, 360 260" 
+    fill="#87CEEB" 
+    stroke="#6B4EE6" 
+    stroke-width="2"/>
+  <path d="M 180 280 C 200 260, 220 300, 240 280 S 280 300, 300 280 S 340 300, 360 280" 
+    fill="#87CEEB" 
+    stroke="#6B4EE6" 
+    stroke-width="2"/>
+  
+  <!-- Göz -->
+  <path d="M 280 260 A 8 8 0 0 1 296 260" 
+    stroke="#6B4EE6" 
+    stroke-width="6" 
+    fill="none"/>
+  
+  <!-- Burun -->
+  <ellipse cx="270" cy="280" rx="4" ry="3" fill="#6B4EE6"/>
+  
+  <!-- Ağız -->
+  <path d="M 260 290 Q 270 300, 280 290" 
+    stroke="#6B4EE6" 
+    stroke-width="3" 
+    fill="none"/>
+  
+  <!-- Kod sembolleri -->
+  <text x="360" y="240" 
+    font-family="monospace" 
+    font-size="32" 
+    font-weight="bold"
+    fill="#6B4EE6">&lt;/&gt;</text>
+  
+  <!-- Dekoratif elementler -->
+  <circle cx="180" cy="180" r="3" fill="#FFD700"/>
+  <circle cx="340" cy="180" r="3" fill="#FFD700"/>
+  <circle cx="200" cy="160" r="2" fill="#87CEEB"/>
+  <circle cx="320" cy="160" r="2" fill="#FF9ECD"/>
+</svg>

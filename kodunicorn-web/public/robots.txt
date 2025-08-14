@@ -1,0 +1,27 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://kodunicorn.com.tr/sitemap.xml
+
+# Crawl-delay
+Crawl-delay: 1
+
+# Disallow admin areas (if any)
+Disallow: /admin/
+Disallow: /api/
+Disallow: /_next/
+Disallow: /static/
+
+# Allow important pages
+Allow: /blog/
+Allow: /education/
+Allow: /stem-games/
+Allow: /women-in-tech/
+Allow: /interactive-education/
+Allow: /gamification/
+Allow: /computer-science/
+Allow: /creative-content/
+Allow: /community/
+Allow: /character/
+
