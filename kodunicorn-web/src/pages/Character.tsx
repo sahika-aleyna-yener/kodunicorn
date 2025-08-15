@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import styled, { keyframes } from '@emotion/styled';
+import styled from '@emotion/styled';
+import { keyframes } from '@emotion/react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { theme } from '../styles/theme';
@@ -131,7 +132,7 @@ const CharacterDisplay = styled.div`
   justify-content: center;
   align-items: center;
   min-height: 600px;
-  background: linear-gradient(135deg, white, ${theme.colors.gray[50]});
+  background: linear-gradient(135deg, white, ${theme.colors.gray[100]});
   border-radius: 25px;
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
   padding: ${theme.spacing.xlarge};
@@ -191,7 +192,7 @@ const SidePanel = styled.div`
 `;
 
 const PanelCard = styled(motion.div)`
-  background: linear-gradient(135deg, white, ${theme.colors.gray[50]});
+  background: linear-gradient(135deg, white, ${theme.colors.gray[100]});
   border-radius: 20px;
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
   padding: ${theme.spacing.large};

@@ -1,16 +1,12 @@
 import React, { useState } from 'react';
-import styled, { keyframes } from '@emotion/styled';
+import styled from '@emotion/styled';
+import { keyframes } from '@emotion/react';
 import { motion } from 'framer-motion';
 import { stemGames } from '../data/stemGames';
 import type { StemGame } from '../components/Education/types';
 import { theme } from '../styles/theme';
 
 // Tatlı animasyonlar
-const float = keyframes`
-  0%, 100% { transform: translateY(0px); }
-  50% { transform: translateY(-10px); }
-`;
-
 const sparkle = keyframes`
   0%, 100% { opacity: 0; transform: scale(0) rotate(0deg); }
   50% { opacity: 1; transform: scale(1.2) rotate(180deg); }
@@ -243,7 +239,7 @@ const DetailItem = styled.div`
   gap: 0.5rem;
   font-size: 1rem;
   color: ${theme.colors.gray[600]};
-  background: ${theme.colors.gray[50]};
+  background: ${theme.colors.gray[100]};
   padding: 0.5rem 1rem;
   border-radius: 15px;
   border: 1px solid ${theme.colors.gray[200]};
