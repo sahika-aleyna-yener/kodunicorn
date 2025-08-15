@@ -622,4 +622,6 @@ export const Character: React.FC = () => {
       </CharacterSection>
     </PageContainer>
   );
-}; 
+};
+
+export default Character; 

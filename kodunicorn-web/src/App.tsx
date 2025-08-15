@@ -14,7 +14,7 @@ import { Gamification } from './pages/Gamification';
 import { ComputerScience } from './pages/ComputerScience';
 import { CreativeContent } from './pages/CreativeContent';
 import { Community } from './pages/Community';
-import { Character } from './pages/Character';
+import Character from './pages/Character';
 import StemGames from './pages/StemGames';
 import { Footer } from './components/Footer';
 
