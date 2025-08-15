@@ -42,6 +42,24 @@ const Logo = styled(Link)`
   &:hover img {
     transform: scale(1.1);
   }
+  
+  @media (max-width: ${theme.breakpoints.tablet}) {
+    font-size: ${theme.typography.fontSizes.medium};
+    
+    img {
+      height: 35px;
+      width: 35px;
+    }
+  }
+  
+  @media (max-width: ${theme.breakpoints.mobile}) {
+    font-size: ${theme.typography.fontSizes.small};
+    
+    img {
+      height: 30px;
+      width: 30px;
+    }
+  }
 `;
 
 const LogoText = styled.span`
@@ -53,6 +71,14 @@ const LogoText = styled.span`
 const NavLinks = styled.div`
   display: flex;
   gap: ${theme.spacing.large};
+  
+  @media (max-width: ${theme.breakpoints.tablet}) {
+    gap: ${theme.spacing.medium};
+  }
+  
+  @media (max-width: ${theme.breakpoints.mobile}) {
+    display: none;
+  }
 `;
 
 const NavLink = styled(Link)<{ isActive: boolean }>`
