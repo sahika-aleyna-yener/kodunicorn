@@ -541,6 +541,10 @@ export const Home: React.FC = () => {
           >
             Çocuklar için eğlenceli teknoloji, bilim ve eğitim platformu! 
             🚀 Oyunlarla öğren, yaratıcılığını keşfet, geleceği şekillendir!
+            <br />
+            <span style={{ fontSize: '0.9em', opacity: 0.8 }}>
+              🎮 STEM Oyunları • 📚 Mini Dersler • 🏆 Ödül Sistemi • 🌟 Günlük Görevler
+            </span>
           </HeroDescription>
 
           <ButtonGroup>
@@ -584,77 +588,62 @@ export const Home: React.FC = () => {
         <SectionTitle>Neler Sunuyoruz?</SectionTitle>
         <FeaturesGrid>
           <FeatureCard
-            to="/women-in-tech"
+            to="/stem-games"
             whileHover={{ y: -10 }}
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            <FeatureIcon>👩‍💻</FeatureIcon>
-            <FeatureTitle>Teknolojide Kadın</FeatureTitle>
+            <FeatureIcon>🎮</FeatureIcon>
+            <FeatureTitle>STEM Oyunları</FeatureTitle>
             <FeatureDescription>
-              Teknoloji dünyasında kadınların başarı hikayeleri ve deneyimleri. 
-              İlham verici hikayeler ve mentorluk fırsatları! 💪
+              Kodlama, matematik, fen deneyleri ve robotik oyunları! 
+              Eğlenceli quizler ve interaktif bulmacalar! 🧩
             </FeatureDescription>
           </FeatureCard>
 
           <FeatureCard
-            to="/interactive-education"
+            to="/education"
             whileHover={{ y: -10 }}
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
           >
-            <FeatureIcon>🎓</FeatureIcon>
-            <FeatureTitle>İnteraktif Eğitim</FeatureTitle>
+            <FeatureIcon>📚</FeatureIcon>
+            <FeatureTitle>Mini Dersler</FeatureTitle>
             <FeatureDescription>
-              Her yaş grubu için özelleştirilmiş, eğlenceli öğrenme deneyimi. 
-              Oyunlaştırılmış içerikler ve pratik uygulamalar! 🎮
+              Kısa ve anlaşılır video anlatımlar! 
+              Evde yapabileceğin basit STEM projeleri! 🔬
             </FeatureDescription>
           </FeatureCard>
 
           <FeatureCard
-            to="/gamification"
+            to="/achievements"
             whileHover={{ y: -10 }}
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
           >
-            <FeatureIcon>🌟</FeatureIcon>
-            <FeatureTitle>Oyunlaştırma</FeatureTitle>
+            <FeatureIcon>🏆</FeatureIcon>
+            <FeatureTitle>Ödül Sistemi</FeatureTitle>
             <FeatureDescription>
-              Başarılarınızı takip edin, rozetler kazanın ve kendinizi geliştirin. 
-              Seviye atlama ve ödül sistemi! 🏆
+              Rozetler, yıldızlar ve sticker'lar kazan! 
+              Başarılarını takip et ve seviye atla! ⭐
             </FeatureDescription>
           </FeatureCard>
 
           <FeatureCard
-            to="/computer-science"
+            to="/daily-challenge"
             whileHover={{ y: -10 }}
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.8 }}
           >
-            <FeatureIcon>📚</FeatureIcon>
-            <FeatureTitle>Bilgisayar Bilimleri</FeatureTitle>
+            <FeatureIcon>🌟</FeatureIcon>
+            <FeatureTitle>Günlük Görevler</FeatureTitle>
             <FeatureDescription>
-              Python, veri analizi, web geliştirme ve daha fazlası. 
-              Güncel teknolojiler ve pratik projeler! 💻
-            </FeatureDescription>
-          </FeatureCard>
-
-          <FeatureCard
-            to="/creative-content"
-            whileHover={{ y: -10 }}
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 1.0 }}
-          >
-            <FeatureIcon>🎨</FeatureIcon>
-            <FeatureTitle>Yaratıcı İçerik</FeatureTitle>
-            <FeatureDescription>
-              Blog yazıları, video içerikler ve interaktif materyaller. 
-              Öğrenmeyi eğlenceli hale getiren içerikler! ✨
+              Her gün yeni STEM görevleri ve bulmacalar! 
+              Merakını tetikleyen mini deneyler! 🧪
             </FeatureDescription>
           </FeatureCard>
 
@@ -663,28 +652,28 @@ export const Home: React.FC = () => {
             whileHover={{ y: -10 }}
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 1.2 }}
+            transition={{ duration: 0.8, delay: 1.0 }}
           >
-            <FeatureIcon>🤝</FeatureIcon>
+            <FeatureIcon>👥</FeatureIcon>
             <FeatureTitle>Topluluk</FeatureTitle>
             <FeatureDescription>
-              Diğer öğrencilerle bağlantı kurun, deneyimlerinizi paylaşın. 
-              Mentorluk ve işbirliği fırsatları! 🌈
+              Diğer çocuklarla projelerini paylaş! 
+              Online yarışmalar ve etkinlikler! 🎯
             </FeatureDescription>
           </FeatureCard>
 
           <FeatureCard
-            to="/stem-games"
+            to="/family-guide"
             whileHover={{ y: -10 }}
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 1.4 }}
+            transition={{ duration: 0.8, delay: 1.2 }}
           >
-            <FeatureIcon>🧪</FeatureIcon>
-            <FeatureTitle>STEM Oyunları</FeatureTitle>
+            <FeatureIcon>👨‍👩‍👧‍👦</FeatureIcon>
+            <FeatureTitle>Aile Rehberi</FeatureTitle>
             <FeatureDescription>
-              Bilim, Teknoloji, Mühendislik ve Matematik alanlarında eğlenceli oyunlar. 
-              İnteraktif deneyler ve öğretici aktiviteler! 🔬
+              Ebeveynler için STEM öğrenim ipuçları! 
+              Çocuklarla birlikte öğrenme fırsatları! 💡
             </FeatureDescription>
           </FeatureCard>
         </FeaturesGrid>
@@ -692,12 +681,16 @@ export const Home: React.FC = () => {
 
       <AboutSection>
         <AboutContent>
-          <AboutTitle>Hakkımızda</AboutTitle>
+          <AboutTitle>
+            Neden KodUnicorn?
+          </AboutTitle>
           <AboutDescription>
-            KodUnicorn, teknoloji ve eğitimi herkes için erişilebilir kılmayı amaçlayan 
-            eğlenceli bir platformdur! 🦄 Bilgisayar bilimleri öğrencisi olarak, kendi deneyimlerimi 
-            paylaşarak diğer öğrencilere ilham vermek ve onlara rehberlik etmek istiyorum.
-            Birlikte öğrenelim, birlikte büyüyelim! 💖
+            KodUnicorn, çocukların STEM alanlarında merakını tetikleyen, 
+            yaratıcılığını geliştiren ve geleceğin teknolojilerini keşfetmelerini 
+            sağlayan eğlenceli bir platformdur. Oyunlaştırılmış öğrenme, 
+            interaktif deneyler ve güvenli topluluk deneyimi ile çocuklar 
+            bilimi sevmenin yanı sıra problem çözme becerilerini de geliştirirler. 
+            🚀✨
           </AboutDescription>
         </AboutContent>
       </AboutSection>
