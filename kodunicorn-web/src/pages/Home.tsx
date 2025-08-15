@@ -531,7 +531,7 @@ export const Home: React.FC = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
           >
-            Hoş Geldiniz <span>KodUnicorn</span>'a
+            <span>KodUnicorn</span>'a Hoş Geldiniz
           </HeroTitle>
           
           <HeroDescription
