@@ -531,7 +531,7 @@ export const Home: React.FC = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
           >
-            <span>KodUnicorn</span>'a Hoş Geldiniz
+            <span>KodUnicorn</span> ile STEM'i keşfet!
           </HeroTitle>
           
           <HeroDescription
@@ -549,14 +549,14 @@ export const Home: React.FC = () => {
 
           <ButtonGroup>
             <PrimaryButton
-              to="/education"
+              to="/stem-games"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
             >
-              🎓 Eğitime Başla
+              🎮 Oyunları Keşfet
             </PrimaryButton>
             
             <SecondaryButton
@@ -567,18 +567,18 @@ export const Home: React.FC = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.6, ease: "easeOut" }}
             >
-              📚 Blog'u Keşfet
+              📚 Blog'a Göz At
             </SecondaryButton>
             
             <SecondaryButton
-              to="/character"
+              to="/community"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.8, ease: "easeOut" }}
             >
-              🦄 Karakterini Özelleştir
+              🌟 Projeni Paylaş
             </SecondaryButton>
           </ButtonGroup>
         </HeroContent>
@@ -597,8 +597,8 @@ export const Home: React.FC = () => {
             <FeatureIcon>🎮</FeatureIcon>
             <FeatureTitle>STEM Oyunları</FeatureTitle>
             <FeatureDescription>
-              Kodlama, matematik, fen deneyleri ve robotik oyunları! 
-              Eğlenceli quizler ve interaktif bulmacalar! 🧩
+              Kodlama oyunları, matematik bulmacaları, fizik simülasyonları! 
+              Sürükle-bırak kodlama ve mini Python görevleri! 🧩
             </FeatureDescription>
           </FeatureCard>
 
@@ -610,25 +610,25 @@ export const Home: React.FC = () => {
             transition={{ duration: 0.8, delay: 0.4 }}
           >
             <FeatureIcon>📚</FeatureIcon>
-            <FeatureTitle>Mini Dersler</FeatureTitle>
+            <FeatureTitle>Video Dersler</FeatureTitle>
             <FeatureDescription>
-              Kısa ve anlaşılır video anlatımlar! 
-              Evde yapabileceğin basit STEM projeleri! 🔬
+              Kısa ve anlaşılır STEM dersleri! 
+              Animasyonlu anlatımlar ve evde yapabileceğin deneyler! 🔬
             </FeatureDescription>
           </FeatureCard>
 
           <FeatureCard
-            to="/achievements"
+            to="/blog"
             whileHover={{ y: -10 }}
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
           >
-            <FeatureIcon>🏆</FeatureIcon>
-            <FeatureTitle>Ödül Sistemi</FeatureTitle>
+            <FeatureIcon>📖</FeatureIcon>
+            <FeatureTitle>STEM Hikayeleri</FeatureTitle>
             <FeatureDescription>
-              Rozetler, yıldızlar ve sticker'lar kazan! 
-              Başarılarını takip et ve seviye atla! ⭐
+              Bilim kahramanları, unicorn temalı maceralar! 
+              İlham verici STEM deneyimleri ve keşif hikayeleri! ✨
             </FeatureDescription>
           </FeatureCard>
 
@@ -643,7 +643,7 @@ export const Home: React.FC = () => {
             <FeatureTitle>Günlük Görevler</FeatureTitle>
             <FeatureDescription>
               Her gün yeni STEM görevleri ve bulmacalar! 
-              Merakını tetikleyen mini deneyler! 🧪
+              Tamamladığında rozet ve yıldız kazan! 🏆
             </FeatureDescription>
           </FeatureCard>
 
@@ -657,23 +657,23 @@ export const Home: React.FC = () => {
             <FeatureIcon>👥</FeatureIcon>
             <FeatureTitle>Topluluk</FeatureTitle>
             <FeatureDescription>
-              Diğer çocuklarla projelerini paylaş! 
-              Online yarışmalar ve etkinlikler! 🎯
+              Mini hackathonlar, STEM turnuvaları! 
+              Güvenli proje paylaşımı ve yarışmalar! 🎯
             </FeatureDescription>
           </FeatureCard>
 
           <FeatureCard
-            to="/family-guide"
+            to="/create-project"
             whileHover={{ y: -10 }}
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 1.2 }}
           >
-            <FeatureIcon>👨‍👩‍👧‍👦</FeatureIcon>
-            <FeatureTitle>Aile Rehberi</FeatureTitle>
+            <FeatureIcon>🎨</FeatureIcon>
+            <FeatureTitle>Kendi Projeni Yap</FeatureTitle>
             <FeatureDescription>
-              Ebeveynler için STEM öğrenim ipuçları! 
-              Çocuklarla birlikte öğrenme fırsatları! 💡
+              Basit araçlarla kendi mini oyunlarını oluştur! 
+              STEM Kahramanları koleksiyonu ve yaratıcı projeler! 💡
             </FeatureDescription>
           </FeatureCard>
         </FeaturesGrid>
@@ -682,7 +682,7 @@ export const Home: React.FC = () => {
       <AboutSection>
         <AboutContent>
           <AboutTitle>
-            Neden KodUnicorn?
+            Misyonumuz
           </AboutTitle>
           <AboutDescription>
             KodUnicorn, çocukların STEM alanlarında merakını tetikleyen, 
@@ -690,7 +690,7 @@ export const Home: React.FC = () => {
             sağlayan eğlenceli bir platformdur. Oyunlaştırılmış öğrenme, 
             interaktif deneyler ve güvenli topluluk deneyimi ile çocuklar 
             bilimi sevmenin yanı sıra problem çözme becerilerini de geliştirirler. 
-            🚀✨
+            STEM sevgisi, eğlenceli öğrenme ve genel kültür için buradayız! 🚀✨
           </AboutDescription>
         </AboutContent>
       </AboutSection>
