@@ -69,7 +69,7 @@ const LogoText = styled.span`
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   
-  @media (max-width: 1024px) {
+  @media (max-width: 768px) {
     display: none;
   }
 `;
@@ -80,7 +80,18 @@ const LogoTextShort = styled.span`
   -webkit-text-fill-color: transparent;
   display: none;
   
-  @media (max-width: 1024px) and (min-width: 768px) {
+  @media (max-width: 768px) and (min-width: 480px) {
+    display: inline;
+  }
+`;
+
+const LogoTextMobile = styled.span`
+  background: linear-gradient(135deg, ${theme.colors.primary}, ${theme.colors.secondary});
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: none;
+  
+  @media (max-width: 480px) {
     display: inline;
   }
 `;
@@ -94,7 +105,7 @@ const NavLinks = styled.div`
   }
   
   @media (max-width: ${theme.breakpoints.mobile}) {
-    display: none;
+    gap: ${theme.spacing.small};
   }
 `;
 
@@ -146,7 +157,8 @@ export const Navigation: React.FC = () => {
             whileTap={{ scale: 0.95 }}
           />
           <LogoText>KodUnicorn</LogoText>
-          <LogoTextShort>KodU</LogoTextShort>
+          <LogoTextShort>KodUnicorn</LogoTextShort>
+          <LogoTextMobile>KodU</LogoTextMobile>
         </Logo>
 
         <NavLinks>
@@ -159,7 +171,8 @@ export const Navigation: React.FC = () => {
               isActive={location.pathname === '/'}
             >
               <span className="desktop-only">Ana Sayfa</span>
-              <span className="tablet-only">Ana</span>
+              <span className="tablet-only">Ana Sayfa</span>
+              <span className="mobile-only">Ana</span>
             </NavLink>
           </motion.div>
           
@@ -184,7 +197,8 @@ export const Navigation: React.FC = () => {
               isActive={isActive('/education')}
             >
               <span className="desktop-only">Eğitim</span>
-              <span className="tablet-only">Eğit</span>
+              <span className="tablet-only">Eğitim</span>
+              <span className="mobile-only">Eğit</span>
             </NavLink>
           </motion.div>
           
@@ -197,7 +211,8 @@ export const Navigation: React.FC = () => {
               isActive={isActive('/character')}
             >
               <span className="desktop-only">Karakter</span>
-              <span className="tablet-only">Kar</span>
+              <span className="tablet-only">Karakter</span>
+              <span className="mobile-only">Kar</span>
             </NavLink>
           </motion.div>
           
@@ -211,6 +226,7 @@ export const Navigation: React.FC = () => {
             >
               <span className="desktop-only">STEM Oyunları</span>
               <span className="tablet-only">STEM</span>
+              <span className="mobile-only">STEM</span>
             </NavLink>
           </motion.div>
         </NavLinks>

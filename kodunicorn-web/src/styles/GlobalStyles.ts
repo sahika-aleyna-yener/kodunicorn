@@ -270,6 +270,10 @@ export const globalStyles = css`
     display: none;
   }
 
+  .mobile-only {
+    display: none;
+  }
+
   @media (max-width: ${theme.breakpoints.tablet}) {
     .desktop-only {
       display: none;
@@ -283,6 +287,10 @@ export const globalStyles = css`
   @media (max-width: ${theme.breakpoints.mobile}) {
     .tablet-only {
       display: none;
+    }
+    
+    .mobile-only {
+      display: inline;
     }
   }
 `;
