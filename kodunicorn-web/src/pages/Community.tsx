@@ -13,6 +13,14 @@ const HeroSection = styled.section`
   background: linear-gradient(135deg, ${theme.colors.primary}20, ${theme.colors.secondary}20);
   padding: ${theme.spacing.xxlarge} 0;
   text-align: center;
+  
+  @media (max-width: ${theme.breakpoints.tablet}) {
+    padding: ${theme.spacing.xlarge} 0;
+  }
+  
+  @media (max-width: ${theme.breakpoints.mobile}) {
+    padding: ${theme.spacing.large} 0;
+  }
 `;
 
 const HeroTitle = styled(motion.h1)`
@@ -23,6 +31,14 @@ const HeroTitle = styled(motion.h1)`
   span {
     color: ${theme.colors.primary};
   }
+  
+  @media (max-width: ${theme.breakpoints.tablet}) {
+    font-size: 2.5rem;
+  }
+  
+  @media (max-width: ${theme.breakpoints.mobile}) {
+    font-size: 2rem;
+  }
 `;
 
 const HeroDescription = styled(motion.p)`
@@ -31,12 +47,31 @@ const HeroDescription = styled(motion.p)`
   max-width: 800px;
   margin: 0 auto;
   line-height: 1.8;
+  
+  @media (max-width: ${theme.breakpoints.tablet}) {
+    font-size: ${theme.typography.fontSizes.medium};
+    max-width: 600px;
+  }
+  
+  @media (max-width: ${theme.breakpoints.mobile}) {
+    font-size: ${theme.typography.fontSizes.small};
+    max-width: 100%;
+    padding: 0 1rem;
+  }
 `;
 
 const ContentSection = styled.section`
   max-width: ${theme.breakpoints.wide};
   margin: 0 auto;
   padding: ${theme.spacing.xxlarge} ${theme.spacing.xlarge};
+  
+  @media (max-width: ${theme.breakpoints.tablet}) {
+    padding: ${theme.spacing.xlarge} ${theme.spacing.large};
+  }
+  
+  @media (max-width: ${theme.breakpoints.mobile}) {
+    padding: ${theme.spacing.large} ${theme.spacing.medium};
+  }
 `;
 
 const SectionTitle = styled.h2`
@@ -44,6 +79,16 @@ const SectionTitle = styled.h2`
   color: ${theme.colors.text};
   margin-bottom: ${theme.spacing.xlarge};
   text-align: center;
+  
+  @media (max-width: ${theme.breakpoints.tablet}) {
+    font-size: ${theme.typography.fontSizes.large};
+    margin-bottom: ${theme.spacing.large};
+  }
+  
+  @media (max-width: ${theme.breakpoints.mobile}) {
+    font-size: ${theme.typography.fontSizes.medium};
+    margin-bottom: ${theme.spacing.medium};
+  }
 `;
 
 const Grid = styled.div`
@@ -51,6 +96,18 @@ const Grid = styled.div`
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: ${theme.spacing.xlarge};
   margin-bottom: ${theme.spacing.xxlarge};
+  
+  @media (max-width: ${theme.breakpoints.tablet}) {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: ${theme.spacing.large};
+    margin-bottom: ${theme.spacing.xlarge};
+  }
+  
+  @media (max-width: ${theme.breakpoints.mobile}) {
+    grid-template-columns: 1fr;
+    gap: ${theme.spacing.medium};
+    margin-bottom: ${theme.spacing.large};
+  }
 `;
 
 const Card = styled(motion.div)`
@@ -58,18 +115,38 @@ const Card = styled(motion.div)`
   padding: ${theme.spacing.xlarge};
   border-radius: ${theme.borderRadius.medium};
   box-shadow: ${theme.shadows.medium};
+  
+  @media (max-width: ${theme.breakpoints.tablet}) {
+    padding: ${theme.spacing.large};
+  }
+  
+  @media (max-width: ${theme.breakpoints.mobile}) {
+    padding: ${theme.spacing.medium};
+  }
 `;
 
 const CardTitle = styled.h3`
   font-size: ${theme.typography.fontSizes.large};
   color: ${theme.colors.primary};
   margin-bottom: ${theme.spacing.medium};
+  
+  @media (max-width: ${theme.breakpoints.tablet}) {
+    font-size: ${theme.typography.fontSizes.medium};
+  }
+  
+  @media (max-width: ${theme.breakpoints.mobile}) {
+    font-size: ${theme.typography.fontSizes.small};
+  }
 `;
 
 const CardDescription = styled.p`
   color: ${theme.colors.text};
   line-height: 1.6;
   margin-bottom: ${theme.spacing.medium};
+  
+  @media (max-width: ${theme.breakpoints.mobile}) {
+    font-size: ${theme.typography.fontSizes.small};
+  }
 `;
 
 const BackButton = styled(Link)`
@@ -84,6 +161,11 @@ const BackButton = styled(Link)`
   &:hover {
     text-decoration: underline;
   }
+  
+  @media (max-width: ${theme.breakpoints.mobile}) {
+    margin-bottom: ${theme.spacing.large};
+    font-size: ${theme.typography.fontSizes.small};
+  }
 `;
 
 const CommunityGrid = styled.div`
@@ -91,6 +173,18 @@ const CommunityGrid = styled.div`
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: ${theme.spacing.large};
   margin: ${theme.spacing.xxlarge} 0;
+  
+  @media (max-width: ${theme.breakpoints.tablet}) {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: ${theme.spacing.medium};
+    margin: ${theme.spacing.xlarge} 0;
+  }
+  
+  @media (max-width: ${theme.breakpoints.mobile}) {
+    grid-template-columns: 1fr;
+    gap: ${theme.spacing.small};
+    margin: ${theme.spacing.large} 0;
+  }
 `;
 
 const CommunityCard = styled(motion.div)`
@@ -98,8 +192,15 @@ const CommunityCard = styled(motion.div)`
   padding: ${theme.spacing.large};
   border-radius: ${theme.borderRadius.medium};
   text-align: center;
-  box-shadow: ${theme.shadows.small};
-  border: 2px solid ${theme.colors.primary};
+  box-shadow: ${theme.shadows.medium};
+  
+  @media (max-width: ${theme.breakpoints.tablet}) {
+    padding: ${theme.spacing.medium};
+  }
+  
+  @media (max-width: ${theme.breakpoints.mobile}) {
+    padding: ${theme.spacing.small};
+  }
 `;
 
 const CommunityIcon = styled.div`

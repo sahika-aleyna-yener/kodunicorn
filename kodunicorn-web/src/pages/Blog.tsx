@@ -19,6 +19,16 @@ const BlogContainer = styled.div`
     grid-template-columns: 1fr;
     padding: ${theme.spacing.large};
   }
+  
+  @media (max-width: ${theme.breakpoints.tablet}) {
+    padding: ${theme.spacing.medium};
+    gap: ${theme.spacing.large};
+  }
+  
+  @media (max-width: ${theme.breakpoints.mobile}) {
+    padding: ${theme.spacing.small};
+    gap: ${theme.spacing.medium};
+  }
 `;
 
 export const Blog: React.FC = () => {
