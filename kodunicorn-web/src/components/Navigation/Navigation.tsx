@@ -69,7 +69,7 @@ const LogoText = styled.span`
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   
-  @media (max-width: ${theme.breakpoints.mobile}) {
+  @media (max-width: 1024px) {
     display: none;
   }
 `;
@@ -80,12 +80,8 @@ const LogoTextShort = styled.span`
   -webkit-text-fill-color: transparent;
   display: none;
   
-  @media (max-width: ${theme.breakpoints.tablet}) and (min-width: ${theme.breakpoints.mobile}) {
+  @media (max-width: 1024px) and (min-width: 768px) {
     display: inline;
-  }
-  
-  @media (max-width: ${theme.breakpoints.mobile}) {
-    display: none;
   }
 `;
 
