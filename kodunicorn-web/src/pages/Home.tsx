@@ -42,7 +42,7 @@ const HeroSection = styled.section`
   width: 100%;
   max-width: 100vw;
   margin-top: 0;
-  padding-top: 80px;
+  padding-top: 120px;
   
   &::before {
     content: '';
@@ -58,7 +58,7 @@ const HeroSection = styled.section`
   
   @media (max-width: ${theme.breakpoints.tablet}) {
     padding: ${theme.spacing.xlarge};
-    padding-top: 80px;
+    padding-top: 120px;
     min-height: 80vh;
     overflow: hidden;
     margin-top: 0;
@@ -66,7 +66,7 @@ const HeroSection = styled.section`
   
   @media (max-width: ${theme.breakpoints.mobile}) {
     padding: ${theme.spacing.large};
-    padding-top: 80px;
+    padding-top: 120px;
     min-height: 70vh;
     overflow: hidden;
     margin-top: 0;
@@ -80,18 +80,18 @@ const HeroContent = styled.div`
   z-index: 2;
   width: 100%;
   overflow: hidden;
-  margin-top: 0;
+  margin-top: 40px;
   
   @media (max-width: ${theme.breakpoints.tablet}) {
     max-width: 90%;
     padding: 0 1rem;
-    margin-top: 0;
+    margin-top: 40px;
   }
   
   @media (max-width: ${theme.breakpoints.mobile}) {
     max-width: 95%;
     padding: 0 0.5rem;
-    margin-top: 0;
+    margin-top: 40px;
   }
 `;
 
