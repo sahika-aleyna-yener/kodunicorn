@@ -14,7 +14,9 @@ export type StemGameType =
   | 'experiment'
   | 'building'
   | 'discovery'
-  | 'challenge';
+  | 'challenge'
+  | 'exploration'
+  | 'creation';
 
 export interface StemGame {
   id: string;
