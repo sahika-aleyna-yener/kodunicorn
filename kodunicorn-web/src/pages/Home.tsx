@@ -543,7 +543,7 @@ export const Home: React.FC = () => {
             🚀 Oyunlarla öğren, yaratıcılığını keşfet, geleceği şekillendir!
             <br />
             <span style={{ fontSize: '0.9em', opacity: 0.8 }}>
-              🎮 STEM Oyunları • 📚 Mini Dersler • 🏆 Ödül Sistemi • 🌟 Günlük Görevler
+              🎮 STEM Oyunları • 🧪 Sanal Laboratuvar • 🌟 Günlük Görevler • 👥 Topluluk
             </span>
           </HeroDescription>
 
@@ -585,7 +585,7 @@ export const Home: React.FC = () => {
       </HeroSection>
 
       <FeaturesSection>
-        <SectionTitle>Neler Sunuyoruz?</SectionTitle>
+        <SectionTitle>STEM Ekosistemi</SectionTitle>
         <FeaturesGrid>
           <FeatureCard
             to="/stem-games"
@@ -603,47 +603,47 @@ export const Home: React.FC = () => {
           </FeatureCard>
 
           <FeatureCard
-            to="/education"
+            to="/virtual-lab"
             whileHover={{ y: -10 }}
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
           >
-            <FeatureIcon>📚</FeatureIcon>
-            <FeatureTitle>Video Dersler</FeatureTitle>
+            <FeatureIcon>🧪</FeatureIcon>
+            <FeatureTitle>Sanal Laboratuvar</FeatureTitle>
             <FeatureDescription>
-              Kısa ve anlaşılır STEM dersleri! 
-              Animasyonlu anlatımlar ve evde yapabileceğin deneyler! 🔬
+              Kimya karışımları, fizik simülasyonları, robot hareketleri! 
+              3D modelleme ve VR/AR deneyimleri! 🔬
             </FeatureDescription>
           </FeatureCard>
 
           <FeatureCard
-            to="/blog"
+            to="/coding-sandbox"
             whileHover={{ y: -10 }}
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
           >
-            <FeatureIcon>📖</FeatureIcon>
-            <FeatureTitle>STEM Hikayeleri</FeatureTitle>
+            <FeatureIcon>💻</FeatureIcon>
+            <FeatureTitle>Kodlama Sandbox</FeatureTitle>
             <FeatureDescription>
-              Bilim kahramanları, unicorn temalı maceralar! 
-              İlham verici STEM deneyimleri ve keşif hikayeleri! ✨
+              Kendi mini oyunlarını ve animasyonlarını yaz! 
+              Sürükle-bırak kodlama alanı! 🎨
             </FeatureDescription>
           </FeatureCard>
 
           <FeatureCard
-            to="/daily-challenge"
+            to="/stem-stories"
             whileHover={{ y: -10 }}
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.8 }}
           >
-            <FeatureIcon>🌟</FeatureIcon>
-            <FeatureTitle>Günlük Görevler</FeatureTitle>
+            <FeatureIcon>📖</FeatureIcon>
+            <FeatureTitle>STEM Macera Hikayeleri</FeatureTitle>
             <FeatureDescription>
-              Her gün yeni STEM görevleri ve bulmacalar! 
-              Tamamladığında rozet ve yıldız kazan! 🏆
+              Unicorn temalı bilim kahramanları! 
+              Oyun + hikaye birleşimi ile öğren! ✨
             </FeatureDescription>
           </FeatureCard>
 
@@ -655,25 +655,55 @@ export const Home: React.FC = () => {
             transition={{ duration: 0.8, delay: 1.0 }}
           >
             <FeatureIcon>👥</FeatureIcon>
-            <FeatureTitle>Topluluk</FeatureTitle>
+            <FeatureTitle>Güvenli Topluluk</FeatureTitle>
             <FeatureDescription>
-              Mini hackathonlar, STEM turnuvaları! 
-              Güvenli proje paylaşımı ve yarışmalar! 🎯
+              STEM sorularını sor, projelerini paylaş! 
+              Mini hackathonlar ve yarışmalar! 🎯
             </FeatureDescription>
           </FeatureCard>
 
           <FeatureCard
-            to="/create-project"
+            to="/daily-challenges"
             whileHover={{ y: -10 }}
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 1.2 }}
           >
-            <FeatureIcon>🎨</FeatureIcon>
-            <FeatureTitle>Kendi Projeni Yap</FeatureTitle>
+            <FeatureIcon>🌟</FeatureIcon>
+            <FeatureTitle>Günlük Etkileşimler</FeatureTitle>
             <FeatureDescription>
-              Basit araçlarla kendi mini oyunlarını oluştur! 
-              STEM Kahramanları koleksiyonu ve yaratıcı projeler! 💡
+              Mini bulmacalar, deneyler, kodlama görevleri! 
+              Rozet ve puan sistemi! 🏆
+            </FeatureDescription>
+          </FeatureCard>
+
+          <FeatureCard
+            to="/stem-heroes"
+            whileHover={{ y: -10 }}
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 1.4 }}
+          >
+            <FeatureIcon>👨‍🔬</FeatureIcon>
+            <FeatureTitle>STEM Kahramanları</FeatureTitle>
+            <FeatureDescription>
+              Bilim insanları, mühendisler, kaşifler! 
+              İlham verici hikayeler ve infografikler! 🎭
+            </FeatureDescription>
+          </FeatureCard>
+
+          <FeatureCard
+            to="/parent-dashboard"
+            whileHover={{ y: -10 }}
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 1.6 }}
+          >
+            <FeatureIcon>👨‍👩‍👧‍👦</FeatureIcon>
+            <FeatureTitle>Ebeveyn Paneli</FeatureTitle>
+            <FeatureDescription>
+              Çocuğunun ilerlemesini takip et! 
+              STEM öğrenim ipuçları ve rehberler! 💡
             </FeatureDescription>
           </FeatureCard>
         </FeaturesGrid>
@@ -682,15 +712,14 @@ export const Home: React.FC = () => {
       <AboutSection>
         <AboutContent>
           <AboutTitle>
-            Misyonumuz
+            STEM Ekosistemi
           </AboutTitle>
           <AboutDescription>
             KodUnicorn, çocukların STEM alanlarında merakını tetikleyen, 
             yaratıcılığını geliştiren ve geleceğin teknolojilerini keşfetmelerini 
-            sağlayan eğlenceli bir platformdur. Oyunlaştırılmış öğrenme, 
-            interaktif deneyler ve güvenli topluluk deneyimi ile çocuklar 
-            bilimi sevmenin yanı sıra problem çözme becerilerini de geliştirirler. 
-            STEM sevgisi, eğlenceli öğrenme ve genel kültür için buradayız! 🚀✨
+            sağlayan kapsamlı bir ekosistemdir. Sanal laboratuvar, VR/AR deneyimleri, 
+            interaktif hikayeler, güvenli topluluk ve ebeveyn desteği ile 
+            STEM'i eğlenceli ve herkes için ulaşılabilir hale getiriyoruz! 🚀✨
           </AboutDescription>
         </AboutContent>
       </AboutSection>
