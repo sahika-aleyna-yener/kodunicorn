@@ -1,0 +1,70 @@
+{
+  "name": "KodUnicorn - Çocuklar için STEM Eğitimi",
+  "short_name": "KodUnicorn",
+  "description": "Çocuklar için STEM eğitimi ve eğlenceli öğrenme platformu. Sanal laboratuvar, VR/AR deneyimleri, interaktif hikayeler ve STEM oyunları.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#FF6B9D",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "lang": "tr",
+  "categories": ["education", "games", "kids"],
+  "icons": [
+    {
+      "src": "/logo.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/screenshot-1.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "KodUnicorn Ana Sayfa"
+    },
+    {
+      "src": "/screenshot-2.png",
+      "sizes": "750x1334",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "KodUnicorn Mobil Görünüm"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "STEM Oyunları",
+      "short_name": "Oyunlar",
+      "description": "STEM oyunlarına hızlı erişim",
+      "url": "/stem-games",
+      "icons": [{ "src": "/icon-192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Sanal Laboratuvar",
+      "short_name": "Lab",
+      "description": "Sanal laboratuvara hızlı erişim",
+      "url": "/virtual-lab",
+      "icons": [{ "src": "/icon-192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Günlük Görevler",
+      "short_name": "Görevler",
+      "description": "Günlük STEM görevlerine hızlı erişim",
+      "url": "/daily-challenges",
+      "icons": [{ "src": "/icon-192.png", "sizes": "192x192" }]
+    }
+  ]
+}

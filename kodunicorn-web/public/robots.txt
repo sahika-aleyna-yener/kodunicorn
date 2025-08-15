@@ -9,21 +9,27 @@ Crawl-delay: 1
 
 # Disallow admin areas (if any)
 Disallow: /admin/
+Disallow: /private/
+
+# Allow important pages
+Allow: /stem-games/
+Allow: /virtual-lab/
+Allow: /coding-sandbox/
+Allow: /stem-stories/
+Allow: /community/
+Allow: /daily-challenges/
+Allow: /stem-heroes/
+Allow: /parent-dashboard/
+Allow: /blog/
+Allow: /education/
+Allow: /character/
+
+# Block unnecessary files
+Disallow: /*.json$
+Disallow: /*.xml$
 Disallow: /api/
 Disallow: /_next/
 Disallow: /static/
-
-# Allow important pages
-Allow: /blog/
-Allow: /education/
-Allow: /stem-games/
-Allow: /women-in-tech/
-Allow: /interactive-education/
-Allow: /gamification/
-Allow: /computer-science/
-Allow: /creative-content/
-Allow: /community/
-Allow: /character/
 
 
 
