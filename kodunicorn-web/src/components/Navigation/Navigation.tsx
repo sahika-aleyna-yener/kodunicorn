@@ -8,9 +8,12 @@ const Nav = styled.nav`
   background-color: ${theme.colors.white};
   padding: ${theme.spacing.medium} ${theme.spacing.xlarge};
   box-shadow: ${theme.shadows.small};
-  position: sticky;
+  position: fixed;
   top: 0;
-  z-index: 100;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  width: 100%;
 `;
 
 const Container = styled.div`

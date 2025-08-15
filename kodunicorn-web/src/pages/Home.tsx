@@ -42,7 +42,7 @@ const HeroSection = styled.section`
   width: 100%;
   max-width: 100vw;
   margin-top: 0;
-  padding-top: 0;
+  padding-top: 80px;
   
   &::before {
     content: '';
@@ -58,18 +58,18 @@ const HeroSection = styled.section`
   
   @media (max-width: ${theme.breakpoints.tablet}) {
     padding: ${theme.spacing.xlarge};
+    padding-top: 80px;
     min-height: 80vh;
     overflow: hidden;
     margin-top: 0;
-    padding-top: ${theme.spacing.xlarge};
   }
   
   @media (max-width: ${theme.breakpoints.mobile}) {
     padding: ${theme.spacing.large};
+    padding-top: 80px;
     min-height: 70vh;
     overflow: hidden;
     margin-top: 0;
-    padding-top: ${theme.spacing.large};
   }
 `;
 
