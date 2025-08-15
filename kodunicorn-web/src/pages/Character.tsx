@@ -3,17 +3,11 @@ import styled from '@emotion/styled';
 import { keyframes } from '@emotion/react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import { theme } from '../styles/theme';
 
 // Basit animasyonlar
 const float = keyframes`
   0%, 100% { transform: translateY(0px); }
   50% { transform: translateY(-10px); }
-`;
-
-const sparkle = keyframes`
-  0%, 100% { opacity: 0; transform: scale(0); }
-  50% { opacity: 1; transform: scale(1.2); }
 `;
 
 const bounce = keyframes`
