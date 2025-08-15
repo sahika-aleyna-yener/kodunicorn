@@ -34,12 +34,15 @@ const HeroSection = styled.section`
   align-items: center;
   justify-content: center;
   position: relative;
+  z-index: 1;
   background: radial-gradient(circle at 20% 80%, ${theme.colors.primary}15 0%, transparent 50%),
               radial-gradient(circle at 80% 20%, ${theme.colors.secondary}15 0%, transparent 50%),
               radial-gradient(circle at 40% 40%, ${theme.colors.accent}10 0%, transparent 50%);
   overflow: hidden;
   width: 100%;
   max-width: 100vw;
+  margin-top: 0;
+  padding-top: 0;
   
   &::before {
     content: '';
@@ -57,12 +60,16 @@ const HeroSection = styled.section`
     padding: ${theme.spacing.xlarge};
     min-height: 80vh;
     overflow: hidden;
+    margin-top: 0;
+    padding-top: ${theme.spacing.xlarge};
   }
   
   @media (max-width: ${theme.breakpoints.mobile}) {
     padding: ${theme.spacing.large};
     min-height: 70vh;
     overflow: hidden;
+    margin-top: 0;
+    padding-top: ${theme.spacing.large};
   }
 `;
 
@@ -73,15 +80,18 @@ const HeroContent = styled.div`
   z-index: 2;
   width: 100%;
   overflow: hidden;
+  margin-top: 0;
   
   @media (max-width: ${theme.breakpoints.tablet}) {
     max-width: 90%;
     padding: 0 1rem;
+    margin-top: 0;
   }
   
   @media (max-width: ${theme.breakpoints.mobile}) {
     max-width: 95%;
     padding: 0 0.5rem;
+    margin-top: 0;
   }
 `;
 
