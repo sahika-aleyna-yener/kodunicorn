@@ -260,4 +260,29 @@ export const globalStyles = css`
     color: ${theme.colors.white};
     transform: translateY(-2px);
   }
+
+  /* Responsive navigation classes */
+  .desktop-only {
+    display: inline;
+  }
+
+  .tablet-only {
+    display: none;
+  }
+
+  @media (max-width: ${theme.breakpoints.tablet}) {
+    .desktop-only {
+      display: none;
+    }
+
+    .tablet-only {
+      display: inline;
+    }
+  }
+
+  @media (max-width: ${theme.breakpoints.mobile}) {
+    .tablet-only {
+      display: none;
+    }
+  }
 `;

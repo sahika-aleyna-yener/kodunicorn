@@ -42,7 +42,7 @@ const Title = styled(motion.h1)`
   text-align: center;
   font-weight: bold;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
-  
+
   span {
     background: linear-gradient(135deg, #FF6B9D, #4ECDC4);
     -webkit-background-clip: text;
@@ -260,21 +260,21 @@ const FeatureList = styled.div`
 export const Character: React.FC = () => {
   return (
     <PageContainer>
-      <Title
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6 }}
-      >
-        <span>KodUnicorn</span> Karakterin
-      </Title>
-      
-      <Description
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6, delay: 0.2 }}
-      >
+        <Title
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+        >
+          <span>KodUnicorn</span> Karakterin
+        </Title>
+        
+        <Description
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+        >
         Karakterini seç ve özelleştir! 🎨✨
-      </Description>
+        </Description>
 
       <CharacterGrid>
         <CharacterCard
@@ -333,6 +333,6 @@ export const Character: React.FC = () => {
       </BackButton>
     </PageContainer>
   );
-};
+}; 
 
 export default Character; 

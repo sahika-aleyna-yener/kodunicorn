@@ -45,6 +45,7 @@ const Logo = styled(Link)`
   
   @media (max-width: ${theme.breakpoints.tablet}) {
     font-size: ${theme.typography.fontSizes.medium};
+    gap: ${theme.spacing.small};
     
     img {
       height: 35px;
@@ -54,6 +55,7 @@ const Logo = styled(Link)`
   
   @media (max-width: ${theme.breakpoints.mobile}) {
     font-size: ${theme.typography.fontSizes.small};
+    gap: ${theme.spacing.small};
     
     img {
       height: 30px;
@@ -66,6 +68,25 @@ const LogoText = styled.span`
   background: linear-gradient(135deg, ${theme.colors.primary}, ${theme.colors.secondary});
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  
+  @media (max-width: ${theme.breakpoints.mobile}) {
+    display: none;
+  }
+`;
+
+const LogoTextShort = styled.span`
+  background: linear-gradient(135deg, ${theme.colors.primary}, ${theme.colors.secondary});
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: none;
+  
+  @media (max-width: ${theme.breakpoints.tablet}) and (min-width: ${theme.breakpoints.mobile}) {
+    display: inline;
+  }
+  
+  @media (max-width: ${theme.breakpoints.mobile}) {
+    display: none;
+  }
 `;
 
 const NavLinks = styled.div`
@@ -104,6 +125,11 @@ const NavLink = styled(Link)<{ isActive: boolean }>`
   &:hover::after {
     transform: scaleX(1);
   }
+  
+  @media (max-width: ${theme.breakpoints.tablet}) {
+    padding: ${theme.spacing.small};
+    font-size: ${theme.typography.fontSizes.small};
+  }
 `;
 
 export const Navigation: React.FC = () => {
@@ -124,6 +150,7 @@ export const Navigation: React.FC = () => {
             whileTap={{ scale: 0.95 }}
           />
           <LogoText>KodUnicorn</LogoText>
+          <LogoTextShort>KodU</LogoTextShort>
         </Logo>
 
         <NavLinks>
@@ -135,7 +162,8 @@ export const Navigation: React.FC = () => {
               to="/" 
               isActive={location.pathname === '/'}
             >
-              Ana Sayfa
+              <span className="desktop-only">Ana Sayfa</span>
+              <span className="tablet-only">Ana</span>
             </NavLink>
           </motion.div>
           
@@ -159,7 +187,8 @@ export const Navigation: React.FC = () => {
               to="/education" 
               isActive={isActive('/education')}
             >
-              Eğitim
+              <span className="desktop-only">Eğitim</span>
+              <span className="tablet-only">Eğit</span>
             </NavLink>
           </motion.div>
           
@@ -171,7 +200,8 @@ export const Navigation: React.FC = () => {
               to="/character" 
               isActive={isActive('/character')}
             >
-              Karakter
+              <span className="desktop-only">Karakter</span>
+              <span className="tablet-only">Kar</span>
             </NavLink>
           </motion.div>
           
@@ -183,7 +213,8 @@ export const Navigation: React.FC = () => {
               to="/stem-games" 
               isActive={isActive('/stem-games')}
             >
-              STEM Oyunları
+              <span className="desktop-only">STEM Oyunları</span>
+              <span className="tablet-only">STEM</span>
             </NavLink>
           </motion.div>
         </NavLinks>
