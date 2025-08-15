@@ -69,13 +69,17 @@ const HeroContent = styled.div`
   text-align: center;
   position: relative;
   z-index: 2;
+  width: 100%;
+  overflow: hidden;
   
   @media (max-width: ${theme.breakpoints.tablet}) {
     max-width: 90%;
+    padding: 0 1rem;
   }
   
   @media (max-width: ${theme.breakpoints.mobile}) {
     max-width: 95%;
+    padding: 0 0.5rem;
   }
 `;
 
@@ -85,6 +89,9 @@ const HeroTitle = styled(motion.h1)`
   margin-bottom: ${theme.spacing.large};
   font-weight: ${theme.typography.fontWeights.bold};
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  max-width: 100%;
 
   span {
     background: linear-gradient(135deg, ${theme.colors.primary}, ${theme.colors.secondary});
@@ -106,6 +113,7 @@ const HeroTitle = styled(motion.h1)`
   
   @media (max-width: ${theme.breakpoints.tablet}) {
     font-size: 2.5rem;
+    padding: 0 1rem;
     
     span::after {
       right: -25px;
@@ -114,7 +122,8 @@ const HeroTitle = styled(motion.h1)`
   }
   
   @media (max-width: ${theme.breakpoints.mobile}) {
-    font-size: 2rem;
+    font-size: 1.8rem;
+    padding: 0 0.5rem;
     
     span::after {
       right: -20px;
@@ -132,18 +141,21 @@ const HeroDescription = styled(motion.p)`
   margin-right: auto;
   line-height: 1.6;
   font-weight: ${theme.typography.fontWeights.medium};
+  word-wrap: break-word;
+  overflow-wrap: break-word;
   
   @media (max-width: ${theme.breakpoints.tablet}) {
     font-size: ${theme.typography.fontSizes.large};
     max-width: 700px;
     margin-bottom: ${theme.spacing.large};
+    padding: 0 1rem;
   }
   
   @media (max-width: ${theme.breakpoints.mobile}) {
     font-size: ${theme.typography.fontSizes.medium};
     max-width: 100%;
     margin-bottom: ${theme.spacing.medium};
-    padding: 0 1rem;
+    padding: 0 0.5rem;
   }
 `;
 
