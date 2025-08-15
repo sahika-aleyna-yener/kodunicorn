@@ -52,6 +52,16 @@ const HeroSection = styled.section`
     background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="20" cy="20" r="2" fill="%23FF6B9D" opacity="0.1"/><circle cx="80" cy="40" r="1.5" fill="%234ECDC4" opacity="0.1"/><circle cx="40" cy="80" r="1" fill="%23FFE66D" opacity="0.1"/></svg>');
     animation: ${float} 6s ease-in-out infinite;
   }
+  
+  @media (max-width: ${theme.breakpoints.tablet}) {
+    padding: ${theme.spacing.xlarge};
+    min-height: calc(100vh - 60px);
+  }
+  
+  @media (max-width: ${theme.breakpoints.mobile}) {
+    padding: ${theme.spacing.large};
+    min-height: calc(100vh - 50px);
+  }
 `;
 
 const HeroContent = styled.div`
@@ -88,6 +98,20 @@ const HeroTitle = styled(motion.h1)`
   
   @media (max-width: ${theme.breakpoints.tablet}) {
     font-size: 2.5rem;
+    
+    span::after {
+      right: -25px;
+      font-size: 1.5rem;
+    }
+  }
+  
+  @media (max-width: ${theme.breakpoints.mobile}) {
+    font-size: 2rem;
+    
+    span::after {
+      right: -20px;
+      font-size: 1.2rem;
+    }
   }
 `;
 
@@ -100,6 +124,19 @@ const HeroDescription = styled(motion.p)`
   margin-right: auto;
   line-height: 1.6;
   font-weight: ${theme.typography.fontWeights.medium};
+  
+  @media (max-width: ${theme.breakpoints.tablet}) {
+    font-size: ${theme.typography.fontSizes.large};
+    max-width: 700px;
+    margin-bottom: ${theme.spacing.large};
+  }
+  
+  @media (max-width: ${theme.breakpoints.mobile}) {
+    font-size: ${theme.typography.fontSizes.medium};
+    max-width: 100%;
+    margin-bottom: ${theme.spacing.medium};
+    padding: 0 1rem;
+  }
 `;
 
 const ButtonGroup = styled.div`
@@ -111,6 +148,11 @@ const ButtonGroup = styled.div`
   @media (max-width: ${theme.breakpoints.tablet}) {
     flex-direction: column;
     align-items: center;
+    gap: ${theme.spacing.medium};
+  }
+  
+  @media (max-width: ${theme.breakpoints.mobile}) {
+    gap: ${theme.spacing.small};
   }
 `;
 
@@ -141,6 +183,16 @@ const Button = styled(motion(Link))`
   &:hover::before {
     left: 100%;
   }
+  
+  @media (max-width: ${theme.breakpoints.tablet}) {
+    padding: ${theme.spacing.medium} ${theme.spacing.xlarge};
+    font-size: ${theme.typography.fontSizes.medium};
+  }
+  
+  @media (max-width: ${theme.breakpoints.mobile}) {
+    padding: ${theme.spacing.small} ${theme.spacing.large};
+    font-size: ${theme.typography.fontSizes.small};
+  }
 `;
 
 const PrimaryButton = styled(Button)`
@@ -151,6 +203,12 @@ const PrimaryButton = styled(Button)`
   &:hover {
     box-shadow: ${theme.shadows.large};
     transform: translateY(-4px);
+  }
+  
+  @media (max-width: ${theme.breakpoints.mobile}) {
+    &:hover {
+      transform: translateY(-2px);
+    }
   }
 `;
 
@@ -166,6 +224,14 @@ const SecondaryButton = styled(Button)`
     box-shadow: ${theme.shadows.medium};
     transform: translateY(-4px);
   }
+  
+  @media (max-width: ${theme.breakpoints.mobile}) {
+    border-width: 2px;
+    
+    &:hover {
+      transform: translateY(-2px);
+    }
+  }
 `;
 
 const FeaturesSection = styled.section`
@@ -175,6 +241,14 @@ const FeaturesSection = styled.section`
     radial-gradient(circle at 90% 80%, rgba(78, 205, 196, 0.05) 0%, transparent 50%),
     ${theme.colors.background};
   position: relative;
+  
+  @media (max-width: ${theme.breakpoints.tablet}) {
+    padding: ${theme.spacing.xlarge} 0;
+  }
+  
+  @media (max-width: ${theme.breakpoints.mobile}) {
+    padding: ${theme.spacing.large} 0;
+  }
 `;
 
 const SectionTitle = styled.h2`
@@ -191,6 +265,24 @@ const SectionTitle = styled.h2`
     margin-top: ${theme.spacing.medium};
     animation: ${bounce} 2s ease-in-out infinite;
   }
+  
+  @media (max-width: ${theme.breakpoints.tablet}) {
+    font-size: 2.5rem;
+    margin-bottom: ${theme.spacing.xlarge};
+    
+    &::after {
+      font-size: 1.5rem;
+    }
+  }
+  
+  @media (max-width: ${theme.breakpoints.mobile}) {
+    font-size: 2rem;
+    margin-bottom: ${theme.spacing.large};
+    
+    &::after {
+      font-size: 1.2rem;
+    }
+  }
 `;
 
 const FeaturesGrid = styled.div`
@@ -200,6 +292,18 @@ const FeaturesGrid = styled.div`
   grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
   gap: ${theme.spacing.xxlarge};
   padding: 0 ${theme.spacing.xlarge};
+  
+  @media (max-width: ${theme.breakpoints.tablet}) {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: ${theme.spacing.xlarge};
+    padding: 0 ${theme.spacing.large};
+  }
+  
+  @media (max-width: ${theme.breakpoints.mobile}) {
+    grid-template-columns: 1fr;
+    gap: ${theme.spacing.large};
+    padding: 0 ${theme.spacing.medium};
+  }
 `;
 
 const FeatureCard = styled(motion(Link))`
@@ -237,6 +341,22 @@ const FeatureCard = styled(motion(Link))`
       transform: scaleX(1);
     }
   }
+  
+  @media (max-width: ${theme.breakpoints.tablet}) {
+    padding: ${theme.spacing.xlarge};
+    
+    &:hover {
+      transform: translateY(-4px);
+    }
+  }
+  
+  @media (max-width: ${theme.breakpoints.mobile}) {
+    padding: ${theme.spacing.large};
+    
+    &:hover {
+      transform: translateY(-2px);
+    }
+  }
 `;
 
 const FeatureIcon = styled.div`
@@ -244,6 +364,14 @@ const FeatureIcon = styled.div`
   margin-bottom: ${theme.spacing.large};
   animation: ${float} 3s ease-in-out infinite;
   display: inline-block;
+  
+  @media (max-width: ${theme.breakpoints.tablet}) {
+    font-size: 3rem;
+  }
+  
+  @media (max-width: ${theme.breakpoints.mobile}) {
+    font-size: 2.5rem;
+  }
 `;
 
 const FeatureTitle = styled.h3`
@@ -251,6 +379,14 @@ const FeatureTitle = styled.h3`
   color: ${theme.colors.text};
   margin-bottom: ${theme.spacing.large};
   font-weight: ${theme.typography.fontWeights.bold};
+  
+  @media (max-width: ${theme.breakpoints.tablet}) {
+    font-size: ${theme.typography.fontSizes.large};
+  }
+  
+  @media (max-width: ${theme.breakpoints.mobile}) {
+    font-size: ${theme.typography.fontSizes.medium};
+  }
 `;
 
 const FeatureDescription = styled.p`
@@ -258,6 +394,10 @@ const FeatureDescription = styled.p`
   margin: 0;
   line-height: 1.7;
   font-size: ${theme.typography.fontSizes.medium};
+  
+  @media (max-width: ${theme.breakpoints.mobile}) {
+    font-size: ${theme.typography.fontSizes.small};
+  }
 `;
 
 const AboutSection = styled.section`
@@ -266,6 +406,14 @@ const AboutSection = styled.section`
     radial-gradient(circle at 80% 20%, rgba(255, 230, 109, 0.1) 0%, transparent 50%),
     ${theme.colors.white};
   position: relative;
+  
+  @media (max-width: ${theme.breakpoints.tablet}) {
+    padding: ${theme.spacing.xlarge} 0;
+  }
+  
+  @media (max-width: ${theme.breakpoints.mobile}) {
+    padding: ${theme.spacing.large} 0;
+  }
 `;
 
 const AboutContent = styled.div`
@@ -273,6 +421,14 @@ const AboutContent = styled.div`
   margin: 0 auto;
   padding: 0 ${theme.spacing.xlarge};
   text-align: center;
+  
+  @media (max-width: ${theme.breakpoints.tablet}) {
+    padding: 0 ${theme.spacing.large};
+  }
+  
+  @media (max-width: ${theme.breakpoints.mobile}) {
+    padding: 0 ${theme.spacing.medium};
+  }
 `;
 
 const AboutTitle = styled.h2`
@@ -288,6 +444,22 @@ const AboutTitle = styled.h2`
     margin-top: ${theme.spacing.medium};
     animation: ${sparkle} 2s ease-in-out infinite;
   }
+  
+  @media (max-width: ${theme.breakpoints.tablet}) {
+    font-size: 2.5rem;
+    
+    &::after {
+      font-size: 1.5rem;
+    }
+  }
+  
+  @media (max-width: ${theme.breakpoints.mobile}) {
+    font-size: 2rem;
+    
+    &::after {
+      font-size: 1.2rem;
+    }
+  }
 `;
 
 const AboutDescription = styled.p`
@@ -297,6 +469,17 @@ const AboutDescription = styled.p`
   margin: 0 auto;
   line-height: 1.8;
   font-weight: ${theme.typography.fontWeights.medium};
+  
+  @media (max-width: ${theme.breakpoints.tablet}) {
+    font-size: ${theme.typography.fontSizes.large};
+    max-width: 700px;
+  }
+  
+  @media (max-width: ${theme.breakpoints.mobile}) {
+    font-size: ${theme.typography.fontSizes.medium};
+    max-width: 100%;
+    padding: 0 1rem;
+  }
 `;
 
 export const Home: React.FC = () => {
