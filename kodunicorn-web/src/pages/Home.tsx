@@ -539,8 +539,8 @@ export const Home: React.FC = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
           >
-            Teknoloji, bilim ve eğitimi herkes için erişilebilir kılmayı amaçlayan
-            eğlenceli bir platform! 🚀 Öğrenme yolculuğunuza bizimle başlayın!
+            Çocuklar için eğlenceli teknoloji, bilim ve eğitim platformu! 
+            🚀 Oyunlarla öğren, yaratıcılığını keşfet, geleceği şekillendir!
           </HeroDescription>
 
           <ButtonGroup>
