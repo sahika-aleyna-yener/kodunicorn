@@ -12,6 +12,8 @@ export const globalStyles = css`
 
   html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
+    width: 100%;
   }
 
   body {
@@ -21,9 +23,25 @@ export const globalStyles = css`
     color: ${theme.colors.text};
     background-color: ${theme.colors.background};
     overflow-x: hidden;
+    width: 100%;
+    max-width: 100vw;
     
     /* Çocuk dostu cursor */
     cursor: default;
+  }
+
+  /* Tüm container'lar için overflow kontrolü */
+  #root {
+    overflow-x: hidden;
+    width: 100%;
+    max-width: 100vw;
+  }
+
+  /* Tüm section'lar için overflow kontrolü */
+  section {
+    overflow-x: hidden;
+    width: 100%;
+    max-width: 100vw;
   }
 
   /* Çocuk dostu seçim rengi */

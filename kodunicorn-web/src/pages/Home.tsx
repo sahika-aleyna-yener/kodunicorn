@@ -33,14 +33,13 @@ const HeroSection = styled.section`
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: ${theme.spacing.xxlarge};
-  background: 
-    radial-gradient(circle at 20% 80%, rgba(255, 107, 157, 0.1) 0%, transparent 50%),
-    radial-gradient(circle at 80% 20%, rgba(78, 205, 196, 0.1) 0%, transparent 50%),
-    radial-gradient(circle at 40% 40%, rgba(255, 230, 109, 0.05) 0%, transparent 50%),
-    linear-gradient(135deg, ${theme.colors.background} 0%, ${theme.colors.white} 100%);
   position: relative;
+  background: radial-gradient(circle at 20% 80%, ${theme.colors.primary}15 0%, transparent 50%),
+              radial-gradient(circle at 80% 20%, ${theme.colors.secondary}15 0%, transparent 50%),
+              radial-gradient(circle at 40% 40%, ${theme.colors.accent}10 0%, transparent 50%);
   overflow: hidden;
+  width: 100%;
+  max-width: 100vw;
   
   &::before {
     content: '';
@@ -49,18 +48,21 @@ const HeroSection = styled.section`
     left: 0;
     right: 0;
     bottom: 0;
-    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="20" cy="20" r="2" fill="%23FF6B9D" opacity="0.1"/><circle cx="80" cy="40" r="1.5" fill="%234ECDC4" opacity="0.1"/><circle cx="40" cy="80" r="1" fill="%23FFE66D" opacity="0.1"/></svg>');
-    animation: ${float} 6s ease-in-out infinite;
+    background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ff69b4' fill-opacity='0.05'%3E%3Ccircle cx='30' cy='30' r='4'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    animation: ${float} 20s ease-in-out infinite;
+    pointer-events: none;
   }
   
   @media (max-width: ${theme.breakpoints.tablet}) {
     padding: ${theme.spacing.xlarge};
     min-height: 80vh;
+    overflow: hidden;
   }
   
   @media (max-width: ${theme.breakpoints.mobile}) {
     padding: ${theme.spacing.large};
     min-height: 70vh;
+    overflow: hidden;
   }
 `;
 
