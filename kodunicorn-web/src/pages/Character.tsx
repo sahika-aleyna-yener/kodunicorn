@@ -25,6 +25,14 @@ const PageContainer = styled.div`
   align-items: center;
   justify-content: center;
   font-family: 'Comic Sans MS', 'Chalkboard SE', 'Inter', sans-serif;
+  
+  @media (max-width: 768px) {
+    padding: 1rem;
+  }
+  
+  @media (max-width: 480px) {
+    padding: 0.5rem;
+  }
 `;
 
 const Title = styled(motion.h1)`
@@ -51,6 +59,25 @@ const Title = styled(motion.h1)`
       animation: ${bounce} 2s ease-in-out infinite;
     }
   }
+  
+  @media (max-width: 768px) {
+    font-size: 2.5rem;
+    
+    span::after {
+      right: -30px;
+      font-size: 1.5rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    
+    span::after {
+      right: -25px;
+      font-size: 1.2rem;
+    }
+  }
 `;
 
 const Description = styled(motion.p)`
@@ -61,6 +88,18 @@ const Description = styled(motion.p)`
   text-align: center;
   line-height: 1.8;
   font-weight: 500;
+  
+  @media (max-width: 768px) {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    max-width: 600px;
+  }
+  
+  @media (max-width: 480px) {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    max-width: 100%;
+  }
 `;
 
 const CharacterGrid = styled.div`
@@ -70,6 +109,18 @@ const CharacterGrid = styled.div`
   max-width: 800px;
   width: 100%;
   margin-bottom: 3rem;
+  
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  @media (max-width: 480px) {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
 `;
 
 const CharacterCard = styled(motion.div)`
@@ -86,12 +137,38 @@ const CharacterCard = styled(motion.div)`
     transform: translateY(-10px);
     box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
   }
+  
+  @media (max-width: 768px) {
+    padding: 1.5rem;
+    border-radius: 15px;
+    
+    &:hover {
+      transform: translateY(-5px);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    padding: 1rem;
+    border-radius: 12px;
+    
+    &:hover {
+      transform: translateY(-3px);
+    }
+  }
 `;
 
 const CharacterIcon = styled.div`
   font-size: 4rem;
   margin-bottom: 1rem;
   animation: ${float} 3s ease-in-out infinite;
+  
+  @media (max-width: 768px) {
+    font-size: 3rem;
+  }
+  
+  @media (max-width: 480px) {
+    font-size: 2.5rem;
+  }
 `;
 
 const CharacterName = styled.h3`
@@ -99,12 +176,28 @@ const CharacterName = styled.h3`
   color: #FF6B9D;
   margin-bottom: 0.5rem;
   font-weight: bold;
+  
+  @media (max-width: 768px) {
+    font-size: 1.3rem;
+  }
+  
+  @media (max-width: 480px) {
+    font-size: 1.1rem;
+  }
 `;
 
 const CharacterDescription = styled.p`
   color: #666;
   font-size: 1rem;
   line-height: 1.5;
+  
+  @media (max-width: 768px) {
+    font-size: 0.9rem;
+  }
+  
+  @media (max-width: 480px) {
+    font-size: 0.8rem;
+  }
 `;
 
 const BackButton = styled(Link)`
@@ -126,6 +219,16 @@ const BackButton = styled(Link)`
     box-shadow: 0 8px 25px rgba(255, 107, 157, 0.3);
     text-decoration: none;
   }
+  
+  @media (max-width: 768px) {
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+  }
+  
+  @media (max-width: 480px) {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.9rem;
+  }
 `;
 
 const FeatureList = styled.div`
@@ -138,6 +241,20 @@ const FeatureList = styled.div`
   font-size: 1.1rem;
   line-height: 1.6;
   max-width: 600px;
+  
+  @media (max-width: 768px) {
+    padding: 1.2rem;
+    font-size: 1rem;
+    margin: 1.5rem 0;
+    max-width: 500px;
+  }
+  
+  @media (max-width: 480px) {
+    padding: 1rem;
+    font-size: 0.9rem;
+    margin: 1rem 0;
+    max-width: 100%;
+  }
 `;
 
 export const Character: React.FC = () => {
