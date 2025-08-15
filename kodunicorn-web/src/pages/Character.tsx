@@ -1,82 +1,79 @@
-import React, { useState } from 'react';
-import styled from '@emotion/styled';
-import { Link } from 'react-router-dom';
-import { theme } from '../styles/theme';
-
-const PageContainer = styled.div`
-  min-height: 100vh;
-  background: linear-gradient(135deg, ${theme.colors.background}, ${theme.colors.gray[100]});
-  padding: 2rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-`;
-
-const TestTitle = styled.h1`
-  font-size: 3rem;
-  color: ${theme.colors.primary};
-  margin-bottom: 2rem;
-  text-align: center;
-`;
-
-const TestButton = styled.button`
-  padding: 1rem 2rem;
-  background: ${theme.colors.primary};
-  color: white;
-  border: none;
-  border-radius: 10px;
-  font-size: 1.2rem;
-  cursor: pointer;
-  margin: 1rem;
-  
-  &:hover {
-    background: ${theme.colors.secondary};
-  }
-`;
-
-const TestMessage = styled.div`
-  background: ${theme.colors.accent};
-  color: ${theme.colors.text};
-  padding: 1rem;
-  border-radius: 10px;
-  margin: 1rem;
-  text-align: center;
-  font-size: 1.1rem;
-`;
+import React from 'react';
 
 export const Character: React.FC = () => {
-  const [testCount, setTestCount] = useState(0);
-
-  console.log('Character component rendering...', { testCount });
-
-  const handleTestClick = () => {
-    setTestCount(prev => prev + 1);
-    console.log('Test button clicked!', testCount + 1);
-  };
+  console.log('Character component rendering...');
 
   return (
-    <PageContainer>
-      <TestTitle>🦄 Karakter Sayfası Test</TestTitle>
+    <div style={{
+      minHeight: '100vh',
+      background: 'linear-gradient(135deg, #F0F8FF, #E9ECEF)',
+      padding: '2rem',
+      display: 'flex',
+      flexDirection: 'column',
+      alignItems: 'center',
+      justifyContent: 'center',
+      fontFamily: 'Arial, sans-serif'
+    }}>
+      <h1 style={{
+        fontSize: '3rem',
+        color: '#FF6B9D',
+        marginBottom: '2rem',
+        textAlign: 'center'
+      }}>
+        🦄 Karakter Sayfası Test
+      </h1>
       
-      <TestMessage>
-        Bu sayfa çalışıyor! Test sayacı: {testCount}
-      </TestMessage>
+      <div style={{
+        background: '#FFE66D',
+        color: '#2D2D2D',
+        padding: '1rem',
+        borderRadius: '10px',
+        margin: '1rem',
+        textAlign: 'center',
+        fontSize: '1.1rem'
+      }}>
+        Bu sayfa çalışıyor! 🎉
+      </div>
       
-      <TestButton onClick={handleTestClick}>
+      <button style={{
+        padding: '1rem 2rem',
+        background: '#FF6B9D',
+        color: 'white',
+        border: 'none',
+        borderRadius: '10px',
+        fontSize: '1.2rem',
+        cursor: 'pointer',
+        margin: '1rem'
+      }} onClick={() => alert('Buton çalışıyor!')}>
         Test Butonu (Tıkla!)
-      </TestButton>
+      </button>
       
-      <Link to="/">
-        <TestButton>
-          ← Ana Sayfaya Dön
-        </TestButton>
-      </Link>
+      <a href="/" style={{
+        padding: '1rem 2rem',
+        background: '#4ECDC4',
+        color: 'white',
+        border: 'none',
+        borderRadius: '10px',
+        fontSize: '1.2rem',
+        cursor: 'pointer',
+        margin: '1rem',
+        textDecoration: 'none'
+      }}>
+        ← Ana Sayfaya Dön
+      </a>
       
-      <TestMessage>
+      <div style={{
+        background: '#FFE66D',
+        color: '#2D2D2D',
+        padding: '1rem',
+        borderRadius: '10px',
+        margin: '1rem',
+        textAlign: 'center',
+        fontSize: '1.1rem'
+      }}>
         Eğer bu mesajı görüyorsan, sayfa düzgün çalışıyor! 🎉
-      </TestMessage>
-    </PageContainer>
+      </div>
+    </div>
   );
 };
 
