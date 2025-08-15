@@ -55,12 +55,12 @@ const HeroSection = styled.section`
   
   @media (max-width: ${theme.breakpoints.tablet}) {
     padding: ${theme.spacing.xlarge};
-    min-height: calc(100vh - 60px);
+    min-height: 80vh;
   }
   
   @media (max-width: ${theme.breakpoints.mobile}) {
     padding: ${theme.spacing.large};
-    min-height: calc(100vh - 50px);
+    min-height: 70vh;
   }
 `;
 
@@ -69,6 +69,14 @@ const HeroContent = styled.div`
   text-align: center;
   position: relative;
   z-index: 2;
+  
+  @media (max-width: ${theme.breakpoints.tablet}) {
+    max-width: 90%;
+  }
+  
+  @media (max-width: ${theme.breakpoints.mobile}) {
+    max-width: 95%;
+  }
 `;
 
 const HeroTitle = styled(motion.h1)`
