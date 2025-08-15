@@ -535,8 +535,24 @@ export const Character: React.FC = () => {
     }
   };
 
+  // Test için basit bir mesaj
+  console.log('Character component rendering...');
+
   return (
     <PageContainer>
+      {/* Test mesajı */}
+      <div style={{ 
+        position: 'fixed', 
+        top: '10px', 
+        left: '10px', 
+        background: 'red', 
+        color: 'white', 
+        padding: '10px', 
+        zIndex: 9999 
+      }}>
+        🦄 Character Sayfası Yüklendi!
+      </div>
+      
       <Header>
         <BackButton to="/">
           ← Ana Sayfaya Dön
