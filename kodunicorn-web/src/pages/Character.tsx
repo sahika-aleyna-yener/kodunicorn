@@ -20,18 +20,24 @@ const PageContainer = styled.div`
   min-height: 100vh;
   background: linear-gradient(135deg, #F0F8FF, #E9ECEF);
   padding: 2rem;
+  padding-top: 120px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-family: 'Comic Sans MS', 'Chalkboard SE', 'Inter', sans-serif;
+  width: 100%;
+  max-width: 100vw;
+  overflow: hidden;
   
   @media (max-width: 768px) {
     padding: 1rem;
+    padding-top: 120px;
   }
   
   @media (max-width: 480px) {
     padding: 0.5rem;
+    padding-top: 120px;
   }
 `;
 

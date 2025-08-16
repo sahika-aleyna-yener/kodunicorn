@@ -12,14 +12,20 @@ const PageContainer = styled.div`
 const HeroSection = styled.section`
   background: linear-gradient(135deg, ${theme.colors.primary}20, ${theme.colors.secondary}20);
   padding: ${theme.spacing.xxlarge} 0;
+  padding-top: 120px;
   text-align: center;
+  width: 100%;
+  max-width: 100vw;
+  overflow: hidden;
   
   @media (max-width: ${theme.breakpoints.tablet}) {
     padding: ${theme.spacing.xlarge} 0;
+    padding-top: 120px;
   }
   
   @media (max-width: ${theme.breakpoints.mobile}) {
     padding: ${theme.spacing.large} 0;
+    padding-top: 120px;
   }
 `;
 

@@ -11,22 +11,29 @@ const BlogContainer = styled.div`
   max-width: ${theme.breakpoints.wide};
   margin: 0 auto;
   padding: ${theme.spacing.xlarge};
+  padding-top: 120px;
   display: grid;
   grid-template-columns: 1fr 300px;
   gap: ${theme.spacing.xlarge};
+  width: 100%;
+  max-width: 100vw;
+  overflow: hidden;
 
   @media (max-width: ${theme.breakpoints.desktop}) {
     grid-template-columns: 1fr;
     padding: ${theme.spacing.large};
+    padding-top: 120px;
   }
   
   @media (max-width: ${theme.breakpoints.tablet}) {
     padding: ${theme.spacing.medium};
+    padding-top: 120px;
     gap: ${theme.spacing.large};
   }
   
   @media (max-width: ${theme.breakpoints.mobile}) {
     padding: ${theme.spacing.small};
+    padding-top: 120px;
     gap: ${theme.spacing.medium};
   }
 `;

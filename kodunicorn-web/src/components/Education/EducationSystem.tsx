@@ -10,6 +10,10 @@ import { theme } from '../../styles/theme';
 const Container = styled.div`
   min-height: 100vh;
   background-color: ${theme.colors.background};
+  padding-top: 120px;
+  width: 100%;
+  max-width: 100vw;
+  overflow: hidden;
 `;
 
 const Header = styled.header`
@@ -17,6 +21,9 @@ const Header = styled.header`
   padding: 20px;
   box-shadow: ${theme.shadows.small};
   margin-bottom: 30px;
+  width: 100%;
+  max-width: 100vw;
+  overflow: hidden;
 `;
 
 const Navigation = styled.nav`
