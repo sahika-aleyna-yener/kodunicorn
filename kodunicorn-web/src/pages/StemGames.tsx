@@ -324,7 +324,6 @@ const EmptyState = styled.div`
 export const StemGames: React.FC = () => {
   const [selectedCategory, setSelectedCategory] = useState<string>('all');
   const [selectedDifficulty, setSelectedDifficulty] = useState<string>('all');
-  const [searchQuery, setSearchQuery] = useState<string>('');
 
   useEffect(() => {
     window.scrollTo(0, 0);
