@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Routes, Route, useNavigate } from 'react-router-dom';
 import styled from '@emotion/styled';
 import { BlogList, BlogSidebar } from '../components/Blog';
@@ -44,6 +44,9 @@ export const Blog: React.FC = () => {
   const [posts, setPosts] = useState<BlogPostType[]>(samplePosts);
   const [currentFilter, setCurrentFilter] = useState<{ category?: BlogCategory; searchQuery?: string }>({});
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
 
   const handleTagSelect = (tag: string) => {

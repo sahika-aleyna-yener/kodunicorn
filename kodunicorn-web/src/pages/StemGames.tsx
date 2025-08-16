@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import styled from '@emotion/styled';
 import { keyframes } from '@emotion/react';
 import { motion } from 'framer-motion';
@@ -321,9 +321,14 @@ const EmptyState = styled.div`
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 `;
 
-const StemGames: React.FC = () => {
+export const StemGames: React.FC = () => {
   const [selectedCategory, setSelectedCategory] = useState<string>('all');
   const [selectedDifficulty, setSelectedDifficulty] = useState<string>('all');
+  const [searchQuery, setSearchQuery] = useState<string>('');
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   const categories = [
     { id: 'all', name: 'Tümü 🌈' },

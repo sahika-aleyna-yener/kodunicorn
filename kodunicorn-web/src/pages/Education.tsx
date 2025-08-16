@@ -1,9 +1,13 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import { EducationSystem } from '../components/Education';
 import { educationMaterials } from '../data/educationMaterials';
 
 export const Education: React.FC = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   // Örnek veriler - gerçek uygulamada API'den gelecek
   const currentUser = {
     id: '1',

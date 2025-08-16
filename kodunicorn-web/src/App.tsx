@@ -91,6 +91,10 @@ const LoadingScreen = () => (
 const PageTransition = ({ children }: { children: React.ReactNode }) => {
   const location = useLocation();
   
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location.pathname]);
+  
   return (
     <AnimatePresence mode="wait">
       <motion.div

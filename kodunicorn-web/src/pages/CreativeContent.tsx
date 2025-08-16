@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import styled from '@emotion/styled';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
@@ -227,6 +227,10 @@ const ContentDescription = styled.p`
 `;
 
 export const CreativeContent: React.FC = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <PageContainer>
       <HeroSection>
@@ -235,7 +239,7 @@ export const CreativeContent: React.FC = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
-          <span>Yaratıcı İçerik</span> Üretimi
+          <span>Yaratıcı</span> İçerik
         </HeroTitle>
         <HeroDescription
           initial={{ opacity: 0, y: 20 }}
